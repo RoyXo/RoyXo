@@ -1,0 +1,179 @@
+Index: text_4.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>number = int(input())\r\nmax_num=number%10\r\nnumber=number//10\r\nwhile number>0:\r\n    n = number%10\r\n    if n>max_num:\r\n        number = number // 10\r\n        continue\r\n    if n<=max_num:\r\n        n=max_num\r\nprint(n)
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/text_4.py b/text_4.py
+--- a/text_4.py	(revision 95316e16e9026d3cab8963127a96212c9a44a0f3)
++++ b/text_4.py	(date 1645990972242)
+@@ -1,11 +1,5 @@
+-number = int(input())
+-max_num=number%10
+-number=number//10
+-while number>0:
+-    n = number%10
+-    if n>max_num:
+-        number = number // 10
+-        continue
+-    if n<=max_num:
+-        n=max_num
+-print(n)
+\ No newline at end of file
++4. Программа принимает действительное положительное число x и целое отрицательное число y.
++Выполните возведение числа x в степень y. Задание реализуйте в виде функции my_func(x, y).
++При решении задания нужно обойтись без встроенной функции возведения числа в степень.
++Подсказка: попробуйте решить задачу двумя способами. Первый — возведение в степень с помощью оператора **.
++Второй — более сложная реализация без оператора **, предусматривающая использование цикла.
+\ No newline at end of file
+Index: text_3.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>n = int(input())\r\nnn = n*10+n\r\nnnn = n*100+nn\r\nprint(n+nn+nnn)
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/text_3.py b/text_3.py
+--- a/text_3.py	(revision 95316e16e9026d3cab8963127a96212c9a44a0f3)
++++ b/text_3.py	(date 1645990972246)
+@@ -1,4 +1,1 @@
+-n = int(input())
+-nn = n*10+n
+-nnn = n*100+nn
+-print(n+nn+nnn)
+\ No newline at end of file
++3. Реализовать функцию my_func(), которая принимает три позиционных аргумента и возвращает сумму наибольших двух аргументов.
+\ No newline at end of file
+Index: text_2.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>seconds = int(input())\r\nh = seconds//3600\r\nm = seconds//60-(h*60)\r\ns = seconds-(m*60)-(h*3600)\r\nprint(f\"{h}:{m}:{s}\")
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/text_2.py b/text_2.py
+--- a/text_2.py	(revision 95316e16e9026d3cab8963127a96212c9a44a0f3)
++++ b/text_2.py	(date 1645990972250)
+@@ -1,5 +1,17 @@
+-seconds = int(input())
+-h = seconds//3600
+-m = seconds//60-(h*60)
+-s = seconds-(m*60)-(h*3600)
+-print(f"{h}:{m}:{s}")
+\ No newline at end of file
++# 2. Выполнить функцию, которая принимает несколько параметров,
++# описывающих данные пользователя: имя, фамилия, год рождения, город проживания, email, телефон.
++# Функция должна принимать параметры как именованные аргументы.
++# Осуществить вывод данных о пользователе одной строкой.
++
++def profile(**kwargs):
++    return " ".join(kwargs.valeus())
++
++
++print(profile(name=input("enter your name: "),
++              sure_name=input("enter your sure name: "),
++              birth_year=input("enter your year of birth: "),
++              city=input("enter your city: "),
++              e_mail=input("enter your email: "),
++              phon_number=input("enter your phon number: ")))
++
++
+Index: text_1.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>num = int(input(\"Введите значение: \"))\r\nprint(num)\r\nnumber = float(input(\"Введите значение: \"))\r\nprint(number)\r\nname = input(\"Введите ваше имя: \")\r\nprint(name)
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/text_1.py b/text_1.py
+--- a/text_1.py	(revision 95316e16e9026d3cab8963127a96212c9a44a0f3)
++++ b/text_1.py	(date 1645990972256)
+@@ -1,6 +1,14 @@
+-num = int(input("Введите значение: "))
+-print(num)
+-number = float(input("Введите значение: "))
+-print(number)
+-name = input("Введите ваше имя: ")
+-print(name)
+\ No newline at end of file
++# Реализовать функцию, принимающую два числа(позиционные аргументы) и выполняющую их деление.
++# Числа запрашивать упользователя, предусмотреть обработку ситуации деления на ноль.
++
++def division(x, y):
++    try:
++        return int(x) / int(y)
++    except ZerroDivisionError:
++        print("Деление на ноль невозможно!")
++    except ValeuError:
++        print("Введите число!")
++print(division(input("Введите первое значение: "), input("Введите второе значение: ")))
++
++
++
+Index: text_6.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>a = int(input(\"Введите километраж: \"))\r\nd = int(input(\"Введите день пробежки: \"))\r\nday=0\r\nfor i in range(1, d):\r\n    a=a*1.1\r\n    day=i+1\r\nprint(f\"На {day}-й день не менее {a} км.\")
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/text_6.py b/text_6.py
+--- a/text_6.py	(revision 95316e16e9026d3cab8963127a96212c9a44a0f3)
++++ b/text_6.py	(date 1645990972259)
+@@ -1,7 +1,3 @@
+-a = int(input("Введите километраж: "))
+-d = int(input("Введите день пробежки: "))
+-day=0
+-for i in range(1, d):
+-    a=a*1.1
+-    day=i+1
+-print(f"На {day}-й день не менее {a} км.")
+\ No newline at end of file
++6. Реализовать функцию int_func(), принимающую слова из маленьких латинских букв и возвращающую их же,
++но с прописной первой буквой. Например, print(int_func(‘text’)) -> Text.
++
+Index: text_5.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>total = int(input(\"Выручка: \"))\r\nminus = int(input(\"Расходы: \"))\r\nif total>minus:\r\n    persons = int(input(\"Колличество персонала: \"))\r\n    profit = (total-minus)/persons\r\n    print(total-minus, \"$ Ваща выручка.\", profit, \"$ На каждого сотрудника.\")\r\nelse:\r\n    print(minus-total, \"Ващи убытки.\")
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/text_5.py b/text_5.py
+--- a/text_5.py	(revision 95316e16e9026d3cab8963127a96212c9a44a0f3)
++++ b/text_5.py	(date 1645990972263)
+@@ -1,8 +1,8 @@
+-total = int(input("Выручка: "))
+-minus = int(input("Расходы: "))
+-if total>minus:
+-    persons = int(input("Колличество персонала: "))
+-    profit = (total-minus)/persons
+-    print(total-minus, "$ Ваща выручка.", profit, "$ На каждого сотрудника.")
+-else:
+-    print(minus-total, "Ващи убытки.")
+\ No newline at end of file
++5. Программа запрашивает у пользователя строку чисел, разделённых пробелом.
++При нажатии Enter должна выводиться сумма чисел.
++Пользователь может продолжить ввод чисел, разделённых пробелом и снова нажать Enter.
++
++Сумма вновь введённых чисел будет добавляться к уже подсчитанной сумме.
++Но если вместо числа вводится специальный символ, выполнение программы завершается.
++Если специальный символ введён после нескольких чисел,
++то вначале нужно добавить сумму этих чисел к полученной ранее сумме и после этого завершить программу.
+\ No newline at end of file
+Index: text_7.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/text_7.py b/text_7.py
+new file mode 100644
+--- /dev/null	(date 1645990972266)
++++ b/text_7.py	(date 1645990972266)
+@@ -0,0 +1,4 @@
++7. Продолжить работу над заданием. В программу должна попадать строка из слов,
++разделённых пробелом. Каждое слово состоит из латинских букв в нижнем регистре.
++Нужно сделать вывод исходной строки, но каждое слово должно начинаться с заглавной буквы.
++Используйте написанную ранее функцию int_func().
+\ No newline at end of file
