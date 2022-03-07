@@ -1,0 +1,64 @@
+Index: text_3.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/text_3.py b/text_3.py
+new file mode 100644
+--- /dev/null	(date 1646337648853)
++++ b/text_3.py	(date 1646337648853)
+@@ -0,0 +1,13 @@
++
++dict_season = {3: "весна", 4: "весна", 5: "весна", 6: "лето", 7: "лето", 8: "лето", 9: "осень", 10: "осень", 11: "осень", 12: "зима", 1: "зима", 2: "зима"}
++list_season = ["зима", "зима", "весна", "весна", "весна", "лето", "лето", "лето", "осень", "осень", "осень",  "зима"]
++month = int(input("Введете значение месяца: "))
++
++while month < 1 or month > 12:
++    print("Неверное значение!")
++    month = int(input("Введете верное значение месяца: "))
++
++if month >= 1 or month <= 12:
++    print(list_season[month])
++    print(dict_season[month])
++
+Index: text_1.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/text_1.py b/text_1.py
+new file mode 100644
+--- /dev/null	(date 1646337648840)
++++ b/text_1.py	(date 1646337648840)
+@@ -0,0 +1,7 @@
++# 1. Создать список и заполнить его элементами различных типов данных.
++# Реализовать скрипт проверки типа данных каждого элемента.
++# Использовать функцию type() для проверки типа. Элементы списка можно не запрашивать у пользователя, а указать явно, в программе.
++
++my_list = [1, 2, 3, 4, 5, "вышел зайчик", {1: "охотник", 2: "зайчик"}, [5, 4, 3, 2, 1]]
++for i, item in enumerate(my_list, 1):
++    print(f"{i} {item} - {type(item)}")
+\ No newline at end of file
+Index: text_2.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/text_2.py b/text_2.py
+new file mode 100644
+--- /dev/null	(date 1646337648828)
++++ b/text_2.py	(date 1646337648828)
+@@ -0,0 +1,9 @@
++# 2. Для списка реализовать обмен значений соседних элементов.
++# Значениями обмениваются элементы с индексами 0 и 1, 2 и 3 и т. д.
++# При нечётном количестве элементов последний сохранить на своём месте.
++# Для заполнения списка элементов нужно использовать функцию input().
++
++
++my_list = input("Введите значение: ").spit
++for i in range(1, len(my_list), 2):
++    my_list[i], my_list[i-1] = my_list[i-1], my_list[i]
+diff --git a/text_6.py b/text_6.py
+new file mode 100644
+diff --git a/text_5.py b/text_5.py
+new file mode 100644
