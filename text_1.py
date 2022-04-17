@@ -31,3 +31,5 @@ class Date(object):
 d = '09-04-2022'
 date2 = Date.from_string(d)
 is_date = Date.is_date_valid(d)
+
+print()

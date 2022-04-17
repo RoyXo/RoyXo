@@ -20,3 +20,5 @@ div = ZeroDivission(10, 100)
 print(ZeroDivission.divide(10, 0))
 print(ZeroDivission.divide(10, 0.1))
 print(div.divide(100, 0))
+
+print()

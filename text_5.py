@@ -26,3 +26,5 @@ z_2 = ComplexNumber(3, 4)
 print(z_1)
 print(z_1 + z_2)
 print(z_1 * z_2)
+
+print()

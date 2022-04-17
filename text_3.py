@@ -29,3 +29,5 @@ class Error:
 
 try_except = Error(1)
 print(try_except.my_input())
+
+print()
